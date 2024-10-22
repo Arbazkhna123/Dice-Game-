@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dice Game</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    </head>
+    
+<body>
+    <div class="container">
+        <h1>🎲 Dice Game 🎲</h1>
+        <div id="playerInfo">
+            <div class="player" id="player1">
+                <img src="image.png" alt="Player 1" class="player-image">
+                <h2 id="player1Name">Player 1: 0</h2>
+            </div>
+            <div class="player" id="player2">
+                <img src="image2.png" alt="Player 2" class="player-image">
+                <h2 id="player2Name">Player 2: 0</h2>
+            </div>
+        </div>
+        <div id="gameStatus">Game is starting...</div>
+        <button id="startBtn" onclick="startGame()">Start Game</button>
+        <div id="coinToss">
+            <h2>Select Head or Tail:</h2>
+            <button id="headBtn" onclick="selectChoice('head')">Head</button>
+            <button id="tailBtn" onclick="selectChoice('tail')">Tail</button>
+        </div>
+        <div id="diceContainer">
+            <h3 id="result"></h3>
+            <div id="diceIcons" style="display: none;">
+                <img id="diceImage1" src="image.png" alt="Dice" class="dice" />
+                <img id="diceImage2" src="image2.png" alt="Dice" class="dice" />
+            </div>
+            <button id="player1Btn" onclick="rollDice(1)" disabled>Player 1 Roll</button>
+            <button id="player2Btn" onclick="rollDice(2)" disabled>Player 2 Roll</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

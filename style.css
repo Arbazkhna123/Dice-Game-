@@ -1,0 +1,83 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.player {
+    display: inline-block;
+    width: 200px;
+    margin: 20px;
+    background: #e6e6fa;
+    border-radius: 15px;
+    padding: 15px;
+    transition: transform 0.2s;
+}
+
+.player:hover {
+    transform: scale(1.05);
+}
+
+.player-image {
+    width: 100%;
+    border-radius: 10px;
+    border: 2px solid #4CAF50;
+}
+
+#gameStatus {
+    font-size: 24px;
+    color: #4CAF50;
+    margin: 20px 0;
+}
+
+button {
+    padding: 12px 24px;
+    font-size: 18px;
+    margin: 10px;
+    border: none;
+    border-radius: 8px;
+    background: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:disabled {
+    background: #ccc;
+}
+
+button:hover:not(:disabled) {
+    background: #45a049;
+    transform: scale(1.05);
+}
+
+#coinToss {
+    margin: 20px 0;
+}
+
+#diceContainer {
+    margin-top: 20px;
+    display: none;
+}
+
+#result {
+    font-size: 22px;
+    margin: 20px 0;
+    color: #333;
+}
